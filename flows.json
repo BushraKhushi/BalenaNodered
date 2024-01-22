@@ -46,8 +46,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 320,
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "75a2fd19ee8f5f05",
+        "type": "debug",
+        "z": "fb1f6f70b4b00849",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 220,
         "wires": []
     }
 ]
