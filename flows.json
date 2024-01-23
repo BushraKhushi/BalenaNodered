@@ -184,5 +184,17 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "59222ee9f77c67c2",
+        "type": "link in",
+        "z": "aef356a7d99a12c3",
+        "name": "link in 1",
+        "links": [],
+        "x": 675,
+        "y": 320,
+        "wires": [
+            []
+        ]
     }
 ]
