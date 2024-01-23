@@ -266,5 +266,17 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b85843541ac37a0b",
+        "type": "status",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "scope": null,
+        "x": 400,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
