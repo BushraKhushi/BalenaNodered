@@ -278,5 +278,31 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "4e19f6c4159d7f81",
+        "type": "link call",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "links": [],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 710,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f6317fa4b19518e",
+        "type": "link in",
+        "z": "aef356a7d99a12c3",
+        "name": "link in 2",
+        "links": [],
+        "x": 745,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
