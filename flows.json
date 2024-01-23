@@ -1,1 +1,120 @@
-[]
+[
+    {
+        "id": "aef356a7d99a12c3",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c22aa68d.3dd668",
+        "type": "inject",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensor1",
+        "payload": "9",
+        "payloadType": "num",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "726a491e.723d58"
+            ]
+        ]
+    },
+    {
+        "id": "726a491e.723d58",
+        "type": "function",
+        "z": "aef356a7d99a12c3",
+        "name": "Format sensor output",
+        "func": "let value = Math.floor(Math.random() * msg.payload + 1)\nmsg.payload = {[msg.topic] : value};\ndelete msg.topic;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450.0000686645508,
+        "y": 218.99999904632568,
+        "wires": [
+            [
+                "706fefa4.1fe6a"
+            ]
+        ]
+    },
+    {
+        "id": "991eae59.37e98",
+        "type": "inject",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensor2",
+        "payload": "9",
+        "payloadType": "num",
+        "x": 217.89999771118164,
+        "y": 193.99999523162842,
+        "wires": [
+            [
+                "726a491e.723d58"
+            ]
+        ]
+    },
+    {
+        "id": "91074579.4b1d58",
+        "type": "inject",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensor3",
+        "payload": "9",
+        "payloadType": "num",
+        "x": 217.89999771118164,
+        "y": 245.99999523162842,
+        "wires": [
+            [
+                "726a491e.723d58"
+            ]
+        ]
+    },
+    {
+        "id": "f4a4b20b.45016",
+        "type": "inject",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensor4",
+        "payload": "9",
+        "payloadType": "num",
+        "x": 213.89999771118164,
+        "y": 296.9999952316284,
+        "wires": [
+            [
+                "726a491e.723d58"
+            ]
+        ]
+    },
+    {
+        "id": "706fefa4.1fe6a",
+        "type": "debug",
+        "z": "aef356a7d99a12c3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 655.0000305175781,
+        "y": 217.99999523162842,
+        "wires": []
+    }
+]
