@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "name": "PreviousNoderedFlow",
+=======
+    "name": "BalenaNoderedVersionControl",
+>>>>>>> 666213fe094ae0056087ffe67d4bebc7a36e02ac
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {},
